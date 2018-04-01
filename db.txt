@@ -1,0 +1,34 @@
+$con = new mysqli('mysql.hostinger.in','u633879035_guru','guru.mca','u633879035_ding');
+
+Masters:
+
+create table login(no int auto_increment,primary key(no),uname varchar(40),pword varchar(20),utype varchar(20));
+create table stud(no int auto_increment,primary key(no),uname varchar(40),sname varchar(40),dob varchar(20),pword varchar(20));
+
+create table teach(no int auto_increment,primary key(no),uname varchar(40),tname varchar(40),dob varchar(20),pword varchar(20));
+
+create table course(no int auto_increment,primary key(no),cname varchar(40),uname varchar(40),ccode varchar(40),dis varchar(200),jcode varchar(30));
+
+create table stdcou(no int auto_increment,primary key(no),uname varchar(40),cname varchar(40),ccode varchar(40));
+
+
+CREATE TABLE swift(uname varchar(40),ccode varchar(20),mdl varchar(20),
+quz varchar(20),qno int,ques varchar(2000),otype varchar(10),nopts int,
+ans varchar(25),points int,opt varchar(5100),tim time);
+course:
+
+
+"create table .....$na(no int auto_increment,primary key(no),sname varchar(40))";
+
+create table modules....(no int auto_increment,primary key(no),mname varchar(40),dis varchar(200));
+
+
+Quiz:
+
+create table ....(no int auto_increment,primary key(no),qname varchar(20),dis varchar(200),pub int,qtype varchar(10));
+
+
+CREATE TABLE ....(qid int auto_increment,primary key(qid),ques varchar(2000),otype varchar(10),nopts int,ans varchar(25),points int,opt varchar(5100),expl varchar(1000));
+create table ....(no int auto_increment,primary key(no),uname varchar(40),tot int,tp int default 0,tim DATETIME on update CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP);
+
+

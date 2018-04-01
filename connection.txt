@@ -1,0 +1,3 @@
+netsh wlan show drivers
+netsh wlan set hostednetwork mode=allow ssid=fencer key=guruguru
+netsh wlan start hostednetwork
